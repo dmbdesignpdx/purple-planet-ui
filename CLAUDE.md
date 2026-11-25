@@ -14,8 +14,8 @@ Package manager is **bun** (`bun.lock`, `packageManager: bun@1.4.4`).
 
 ```bash
 bun run dev           # Storybook dev server on :6006
-bun run build         # static build -> storybook-static/
-bun run codegen       # panda codegen -> regenerates ./styled-system
+bun run story         # static build -> storybook-static/
+bun run gen           # panda codegen -> regenerates ./styled-system
 bun run lint          # biome check (lint + import ordering)
 bun run format        # biome format --write
 ```
@@ -49,8 +49,8 @@ Define recipes with `defineRecipe` (single recipe) or `defineSlotRecipe` (multi-
 ```ts
 export const button = defineRecipe({
   className: "button",
-  base: { /* ... */ },
-  variants: { variant: { solid: { /* ... */ } } },
+  base: {/* ... */},
+  variants: { variant: { solid: {/* ... */} } },
   defaultVariants: { variant: "solid" },
 });
 ```

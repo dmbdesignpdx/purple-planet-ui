@@ -6,10 +6,11 @@
   "type": "module",
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "storybook build",
+    "build": "",
     "lint": "biome check",
     "format": "biome format --write",
-    "codegen": "panda codegen"
+    "gen": "panda codegen",
+    "story": "storybook build"
   },
   "dependencies": {
     "@ark-ui/react": "^5.40.0",

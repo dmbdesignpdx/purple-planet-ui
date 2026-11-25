@@ -19,7 +19,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Solid: Story = {
+export const solid: Story = {
   render: (args) => (
     <Button type="button" {...args}>
       Button
@@ -27,7 +27,7 @@ export const Solid: Story = {
   ),
 };
 
-export const Outline: Story = {
+export const outline: Story = {
   render: (args) => (
     <Button {...args} variant="outline">
       Button
@@ -35,7 +35,7 @@ export const Outline: Story = {
   ),
 };
 
-export const Ghost: Story = {
+export const ghost: Story = {
   render: (args) => (
     <Button {...args} variant="ghost">
       Button
@@ -43,7 +43,7 @@ export const Ghost: Story = {
   ),
 };
 
-export const Sizes: Story = {
+export const sizes: Story = {
   render: (args) => (
     <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
       <Button {...args} size="sm">
@@ -59,7 +59,7 @@ export const Sizes: Story = {
   ),
 };
 
-export const Disabled: Story = {
+export const disabled: Story = {
   args: { disabled: true, children: "Button" },
   play: async ({ canvasElement, args }) => {
     const button = within(canvasElement).getByRole("button");
@@ -69,17 +69,15 @@ export const Disabled: Story = {
   },
 };
 
-export const Clickable: Story = {
+export const clickable: Story = {
   args: { children: "Button" },
   play: async ({ canvasElement, args }) => {
-    await userEvent.click(
-      within(canvasElement).getByRole("button", { name: "Button" }),
-    );
+    await userEvent.click(within(canvasElement).getByRole("button", { name: "Button" }));
     await expect(args.onClick).toHaveBeenCalledOnce();
   },
 };
 
-export const KeyboardActivation: Story = {
+export const keyboardActivation: Story = {
   args: { children: "Button" },
   play: async ({ canvasElement, args }) => {
     await userEvent.tab();

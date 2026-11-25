@@ -1,4 +1,5 @@
 import { defineConfig } from "@pandacss/dev";
+
 import { badge } from "./src/components/badge/badge.recipe";
 import { button } from "./src/components/button/button.recipe";
 import { card } from "./src/components/card/card.recipe";

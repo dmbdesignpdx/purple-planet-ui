@@ -6,13 +6,23 @@ const meta = {
   title: "Components/Badge",
   component: Badge,
   tags: ["autodocs"],
+  argTypes: {
+    purpose: {
+      control: "select",
+      options: ["neutral", "info", "success", "warning", "error"],
+    },
+  },
 } satisfies Meta<typeof Badge>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Neutral: Story = {
-  render: (args) => <Badge {...args}>Badge</Badge>,
+  args: {
+    purpose: "neutral"
+  },
+
+  render: (args) => <Badge {...args}>Badge</Badge>
 };
 
 export const info: Story = {

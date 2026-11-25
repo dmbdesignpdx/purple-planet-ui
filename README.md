@@ -24,8 +24,8 @@ bun run dev       # Storybook on http://localhost:6006
 | Command             | What it does                                        |
 | ------------------- | --------------------------------------------------- |
 | `bun run dev`       | Starts Storybook on port 6006                       |
-| `bun run build`     | Builds a static Storybook to `storybook-static/`    |
-| `bun run codegen`   | Regenerates `styled-system/` from `panda.config.ts` |
+| `bun run story`     | Builds a static Storybook to `storybook-static/`    |
+| `bun run gen`       | Regenerates `styled-system/` from `panda.config.ts` |
 | `bun run lint`      | Lints and checks import order with Biome            |
 | `bun run format`    | Formats with Biome                                  |
 | `bunx tsc --noEmit` | Typechecks the project                              |

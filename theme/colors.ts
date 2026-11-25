@@ -1,8 +1,8 @@
 import { defineTokens } from "@pandacss/dev";
 
 export const colors = defineTokens({
-  white: { value: "oklch(100% 0 0)" },
-  black: { value: "oklch(0% 0 0)" },
+  white: { value: "#fff" },
+  black: { value: "#000" },
   indigo: {
     50: { value: "oklch(96.2% 0.018 272.314)" },
     100: { value: "oklch(93% 0.034 272.788)" },

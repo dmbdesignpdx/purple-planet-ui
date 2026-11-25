@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-// import { expect, fn, userEvent, within } from "storybook/test";
+// import { expect, within } from "storybook/test";
 import { Card } from "./card";
 
 const meta = {
@@ -12,7 +12,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Solid: Story = {
+export const solid: Story = {
   render: (args) => (
     <Card.Root {...args}>
       <Card.Header>
